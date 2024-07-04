@@ -39,8 +39,8 @@ func LanciaGenericaConFileInOutAtteso(t *testing.T, prog string, inFile string, 
 	}
 
 	// Compare the actual output with the expected output
-	actualOutput := outBuffer.Bytes()
-	if !bytes.Equal(actualOutput, expectedOutput) {
+	actualOutput := string(outBuffer.Bytes())
+	if actualOutput != string(expectedOutput) {
 		t.Errorf("Output mismatch for %s:\nExpected:\n%s\nGot:\n%s", inFile, string(expectedOutput), string(actualOutput))
 	}
 
