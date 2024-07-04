@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-var prog = "05099A_CaronePolettini_Luca.go"
+var prog = "C:\\Users\\giacomotommi\\Documents\\.Tutta la Programmazione dell'Uni\\Esercizi lab algoritmi Go\\Progetto-Mattonelle\\Main.go"
 var verbose = true
 
 func LanciaGenericaConFileInOutAtteso(t *testing.T, prog string, inFile string, outFile string, verbose bool) {
@@ -86,6 +86,36 @@ func TestBasePista(t *testing.T) {
 		prog,
 		"./inFiles/BasePista",
 		"./outFiles/BasePista",
+		verbose,
+	)
+}
+
+func TestComplPistaLung(t *testing.T) {
+	LanciaGenericaConFileInOutAtteso(
+		t,
+		prog,
+		"./inFiles/ComplPistaLung",
+		"./outFiles/ComplPistaLung",
+		verbose,
+	)
+}
+
+func TestComplPropaga(t *testing.T) {
+	LanciaGenericaConFileInOutAtteso(
+		t,
+		prog,
+		"./inFiles/ComplPropaga",
+		"./outFiles/ComplPropaga",
+		verbose,
+	)
+}
+
+func TestComplColoraSpegni(t *testing.T) {
+	LanciaGenericaConFileInOutAtteso(
+		t,
+		prog,
+		"./inFiles/ComplColoraSpegni",
+		"./outFiles/ComplColoraSpegni",
 		verbose,
 	)
 }
