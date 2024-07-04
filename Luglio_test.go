@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-var prog = "C:\\Users\\giacomotommi\\Documents\\.Tutta la Programmazione dell'Uni\\Esercizi lab algoritmi Go\\Progetto-Mattonelle\\Main.go"
+var prog = "../05099A_CaronePolettini_Luca.go"
 var verbose = true
 
 func LanciaGenericaConFileInOutAtteso(t *testing.T, prog string, inFile string, outFile string, verbose bool) {
