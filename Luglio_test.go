@@ -119,3 +119,33 @@ func TestComplColoraSpegni(t *testing.T) {
 		verbose,
 	)
 }
+
+func TestComplPropOrdina(t *testing.T) {
+	LanciaGenericaConFileInOutAtteso(
+		t,
+		prog,
+		"./inFiles/ComplPropOrdina",
+		"./outFiles/ComplPropOrdina",
+		verbose,
+	)
+}
+
+func TestComplBlocco(t *testing.T) {
+	LanciaGenericaConFileInOutAtteso(
+		t,
+		prog,
+		"./inFiles/ComplBlocco",
+		"./outFiles/ComplBlocco",
+		verbose,
+	)
+}
+
+func TestComplAssurdi(t *testing.T) {
+	LanciaGenericaConFileInOutAtteso(
+		t,
+		prog,
+		"./inFiles/ComplAssurdi",
+		"./outFiles/ComplAssurdi",
+		verbose,
+	)
+}
